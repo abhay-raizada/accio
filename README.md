@@ -1,5 +1,16 @@
-# csv_to_api
+Accio
+=====
 
-A POC for a basic CSV file to API converter.
+A tool to automate your backend.
 
-CSV file --> GET, POST, PUT, PATCH, DELETE; APIs
+## Setup
+
+Make sure you use a python3 environment
+
+`pip install -r requirements.txt`
+
+To run:  `FLASK_APP=server.py python3 -m flask run`
+
+To use:
+place a file in root directory then from a different terminal run:
+ `curl 127.0.0.1:5000/<name_of_file>`
