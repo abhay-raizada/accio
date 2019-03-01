@@ -2,7 +2,7 @@ databases:
     mysql:
         driver: mysql
         host: localhost
-        database: database
+        database: accio
         user: root
         password: ''
         prefix: ''
