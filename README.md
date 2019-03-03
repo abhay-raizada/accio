@@ -3,6 +3,7 @@ Accio
 
 A tool to automate your backend.
 
+![Accio Description](examples/drawing.jpg)
 ## Setup
 
 Make sure you use a python3 environment
