@@ -1,0 +1,10 @@
+from orator import Model
+from orator import DatabaseManager
+import yaml
+
+config = yaml.load(open('orator.yml'))['databases']
+db = DatabaseManager(config)
+Model.set_connection_resolver(db)
+
+class Resource(Model):
+    pass
