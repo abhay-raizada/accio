@@ -7,4 +7,4 @@ db = DatabaseManager(config)
 Model.set_connection_resolver(db)
 
 class Resource(Model):
-    pass
+    __fillable__ = ['user_id', 'name', 'url']
