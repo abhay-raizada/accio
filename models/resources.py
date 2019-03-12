@@ -1,10 +1,4 @@
-from orator import Model
-from orator import DatabaseManager
-import yaml
+from .application_model import ApplicationModel
 
-config = yaml.load(open('orator.yml'))['databases']
-db = DatabaseManager(config)
-Model.set_connection_resolver(db)
-
-class Resource(Model):
+class Resource(ApplicationModel):
     __fillable__ = ['user_id', 'name', 'url']
